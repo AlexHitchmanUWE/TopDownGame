@@ -18,12 +18,6 @@ class Game
 		void mouseButtonPressed(sf::Event event);
 		void mouseButtonReleased(sf::Event event);
 		void keyPressed(sf::Event event);
-		void keyCollision(sf::Sprite *key, sf::Sprite *player);
-		void holdKey(sf::Sprite *key, sf::Sprite *player);
-		void keyDoorCollision(sf::Sprite* key, sf::Sprite* door);
-		void setRoomValues();
-		void setStreetValues();
-
 
 	private:
 
@@ -36,15 +30,11 @@ class Game
 		// regular sprites
 		sf::Sprite background;
 		sf::Sprite menu_background;
-		sf::Sprite streetlights;
-		sf::Sprite house;
 
 		//sprite smart pointers
 		std::unique_ptr<sf::Sprite> player;
 		std::unique_ptr<sf::Sprite> click_box1;
-		std::shared_ptr<sf::Sprite> room;
-		std::shared_ptr<sf::Sprite> door;
-		std::unique_ptr<sf::Sprite> key;
+	
 
 		// texture smart vectors
 		std::vector<std::unique_ptr<sf::Texture>> rooms;
