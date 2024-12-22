@@ -84,6 +84,11 @@ void Game::initSprites()
     {
         std::cout << "\n click box is not loading";
     }
+    background.setTexture(background_texture);
+    menu_background.setTexture(menu_background_texture);
+    player->setTexture(player_texture);
+    click_box1->setTexture(click_box1_texture);
+
 }
 void Game::initText()
 {
