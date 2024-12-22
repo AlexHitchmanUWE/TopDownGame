@@ -68,21 +68,21 @@ void Game::initSprites()
     click_box1 = std::make_unique<sf::Sprite>();
 
     //Loading Textures
-	if (!background_texture.loadFromFile("../Data/Images/Custom/CityBackgrounds/city 1/10.png"))
+	if (!background_texture.loadFromFile("../Data/Images/Custom/OfficeCustom/room.png"))
 	{
-		std::cout << "\n background is not loading";
+		std::cout << "background is not loading \n";
 	}
-    if (!menu_background_texture.loadFromFile("../Data/Images/Custom/CityBackgrounds/city 1/1.png"))
+    if (!menu_background_texture.loadFromFile("../Data/Images/Custom/OfficeCustom/room.png"))
     {
-        std::cout << "\n menu background is not loading";
+        std::cout << "menu background is not loading \n";
     }
 	if (!player_texture.loadFromFile("../Data/Images/Custom/AnimalPack/3 Cat/cats_idle-png/Cat_idle1.png"))
 	{
-		std::cout << "\n player is not loading";
+		std::cout << "player is not loading \n";
 	}
     if (!click_box1_texture.loadFromFile("../Data/Images/Custom/StreetBackgrounds/PNG/City2/Bright/sky.png"))
     {
-        std::cout << "\n click box is not loading";
+        std::cout << "click box is not loading \n";
     }
     background.setTexture(background_texture);
     menu_background.setTexture(menu_background_texture);
